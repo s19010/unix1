@@ -1,4 +1,4 @@
 # ディレクトリ以下のファイルを表示する
-sudo find /home/ -type f | wc -l
+sudo find ~ -type f | wc -l
 # ディレクトリの数を表示する
-sudo find /home/ -type d | wc -l
+sudo find ~ -type d | wc -l
