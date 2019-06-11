@@ -27,8 +27,8 @@ do
         2)
             echo -n comment:
             read comment
-            git comment -m "$select"
-            git log --online
+            git commit -m "$select"
+            git log --oneline
             ;;
         3)
             git push
