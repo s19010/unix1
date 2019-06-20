@@ -1,10 +1,2 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-</head>
-<body>
-<script src="http://zip.cgis.biz/xml/zip.php?zn=>xxxxxxx"</script>
-<script src="app.js"></script>
-</body>
-</html>
+zipcode=$1
+curl http://zip.cgis.biz/csv/zip.php?zn=${zipcode} 2> /dev/null | nkf -wLu

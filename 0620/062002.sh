@@ -1,10 +1,2 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-</head>
-<body>
-<script src="http://express.heartrails.com/api/xml?method=getLines"></script>
-<script src="app.js"></script>
-</body>
-</html>
+pref=$1
+curl "http://express.heartrails.com/api/json?method=getLines&prefecture=${pref}" 2> /dev/null | jq ".response.line[]"
