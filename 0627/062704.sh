@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo ls -lR /home | awk '{print $9, $5}' | sort -nr -k 2 | head -n 5
+sudo find "$HOME" -type f -exec du \{\} \; | sort -nr -k 2 | head -n 5
